@@ -301,18 +301,25 @@ h3{
 .ex-right{
     flex-basis: 55%;
 }
+.work-contents{
+    margin-bottom: 15px;
+}
+.ex-right p{
+    padding: 0;
+}
+
 .ex-right h3{
     background: rgb(37, 47, 61);
     color: #fff;
     padding: 7px 0;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 .ex-right .projectbox{
     background: rgb(236, 156, 65);
     color: #fff;
     padding: 7px 0;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 .contactBox{
