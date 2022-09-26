@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head> 
+    <meta charset="UTF-8">
+    <!-- The width=device-width part sets the width of the page to follow the screen-width of the device
+    (which will vary depending on the device).
+    The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Scarlett's Responsive Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href ="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <a href = "index.html"><img src = "images/logo2.png"></a>
+            <div class="nav-links" id = "navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "about.html">ABOUT</a></li>
+                    <li><a href = "education.html">EDUCATION</a></li>
+                    <li><a href = "experience.html">EXPERIENCE</a></li>
+                    <li><a href = "contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class = "text-box">
+            <h1>Hi, I am Sunyoung Park</h1>  
+            <p class = "text-box-para"> I am a Full Stack Developer. While I was woring as a Web Designer, I fell in love with devloping websites and applications from scratch.<br>After a period of self-studying, I decided to pursue CS master degree to broaden my knowledge.<br>Even though I was hard to study master-level courses since didn't have CS background,<br>I tried my best to catch up spending more time than the others.<br>My effort was acknowleged and I am working as a Graduate Assistant.<br>I am enthusiastic at learning and eager to develop myself. I am detail oriented.<br>I like playing with database and am interested in User Interface, Cloud Computing, and Neural Network Algorithms.</p>
+            <a href = "" class = "top-banner-btn">Contact Me</a>
+        
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section class = "Education">
+        <h1>Education</h1>
+        <p>Degrees, Courses, and Certifications</p>
+        <div class = "row">
+            <div class="Education-Col">
+                <h3>Degree</h3>
+                    <p class = "Education-DegreeTitle1">
+                        MS in Computer Science</p>
+                    <p>Charleston Southern University<br>(May, 2021 - Prsent) GPA 4.0</p>
+                    <p class = "Education-DegreeTitle1">  
+                        Double Bachelors Degree<br>of International Trade and German Studies</p>
+                    <p>Kyungsung University<br>(Mar, 2013 - Aug, 2018) GPA 3.69</p>
+            </div>
+            <div class="Education-Col">
+                <h3>Courses</h3>
+                    <p class = "Course-Info">Advanced Algorithm<br>Software Testing and Maintenance<br>Advaned Network<br>Data Mining<br>Advanced Distributed OS</p>
+            </div>
+            <div class="Education-Col">
+                <h3>Certifications</h3>
+                <p class = "Education-Certi">
+                    AWS Certified Cloud Practitioner</p>
+                <p>ZTM(Present)</p>
+                <p class = "Education-Certi">
+                    Understanding and Visualizing Data with Python</p>
+                <p>University of Michigan(Dec, 2020)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="Experience">
+        <h1>Experience</h1>
+        <p>My Work Experiences </p>
+        <div class = "row">
+            <div class="Experience-col">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/glossy1.png"></div>
+                    <div class="swiper-slide"><img src="images/glossy2.png"></div>
+                    <div class="swiper-slide"><img src="images/glossy3.png"></div>
+                    <div class="swiper-slide"><img src="images/gansevoort1.png"></div>
+                    <div class="swiper-slide"><img src="images/gansevoort2.png"></div>
+                    <div class="swiper-slide"><img src="images/gansevoort3.png"></div>
+                    <div class="swiper-slide"><img src="images/gansevoort4.png"></div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+                <h3>Work Experience</h3>
+                <ul>
+                    <li>Web Developer & Designer</li>
+                    <p>GlossyBlossom (Dec 2020 - May 2021)</p>
+                    <li>Marketing Administrator & Web Designer</li>
+                    <p>Gansevoort Liberty Market (Mar 2020 - Dec 2020)</p>
+                    <li>Marketing Administrator</li>
+                    <p>MotownTress (Aug 2019 - Jan 2020)</p>
+                </ul>
+            </div>
+            <div class="Experience-col">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="images/Weatherapp.png"></div>
+                    <div class="swiper-slide"><img src="images/Chatapp.png"></div>
+                    <div class="swiper-slide"><img src="images/Webpage1.png"></div>
+                    <div class="swiper-slide"><img src="images/Webpage2.png"></div>
+                    <div class="swiper-slide"><img src="images/Webpage3.png"></div>
+                    <div class="swiper-slide"><img src="images/Webpage4.png"></div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+                <h3>Personal Projects</h3>
+                <ul>
+                    <li>Reactive Website</li>
+                    <p>Using HTML, CSS, and JavaScript</p>
+                    <li>Chat Application</li>
+                    <p>Using PHP, MySQL, and JavaScript</p>
+                    <li>Dictionary Application</li>
+                    <p>Using HTML, CSS, and JavaScript</p>
+                    <li>Weather Application</li>
+                    <p>Using JavaScript</p>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class = "cta">
+        <h1>I am enthusiastic at learning<br>and devloping my skills while working in the industry</h1>
+        <a href = "" class = "bottom-banner-btn">Contact Me</a>
+    </section>
+
+    <!-- Footer -->
+    <section class = "footer">
+        <h4>About the website</h4>
+        <p>This is Sunyoung Park's personal portfolio website</p>
+        <div class = "icons">
+            <i class="fa fa-github"></i>
+            <i class="fa fa-linkedin-square"></i>
+        </div>
+        <p>Made by Sunyoung Park/Scarlett Park</p>
+    </section>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+    </script>
+    <!-- <script>
+        window.onload = function () {
+          var span = document.createElement('span');
+        
+          span.className = 'fas';
+          span.style.display = 'none';
+          document.body.insertBefore(span, document.body.firstChild);
+          
+          alert(window.getComputedStyle(span, null).getPropertyValue('font-family'));
+            
+          document.body.removeChild(span);
+        };
+        </script> -->
+</body>
+</html>

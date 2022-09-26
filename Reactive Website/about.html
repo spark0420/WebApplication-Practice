@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head> 
+    <meta charset="UTF-8">
+    <!-- The width=device-width part sets the width of the page to follow the screen-width of the device
+    (which will vary depending on the device).
+    The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Scarlett's Responsive Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href ="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <section class = "Subheader">
+        <nav>
+            <a href = "index.html"><img src = "images/logo2.png"></a>
+            <div class="nav-links" id = "navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "about.html">ABOUT</a></li>
+                    <li><a href = "education.html">EDUCATION</a></li>
+                    <li><a href = "experience.html">EXPERIENCE</a></li>
+                    <li><a href = "contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Me</h1>
+    </section>
+
+    <!-- About Me Contents -->
+    <section class ="About-Me">
+        <div class = "row">
+            <div class="about-col">
+                <h1>Hello! My name is Sunyong Park<br>and I am a Full Stack Developer</h1>
+                <p>I am a Full Stack Developer. While I was woring as a Web Designer, I fell in love with devloping websites and applications from scratch. After a period of self-studying, I decided to pursue CS master degree to broaden my knowledge. Even though I was hard to study master-level courses since didn't have CS background, I tried my best to catch up spending more time than the others. My effort was acknowleged and I am working as a Graduate Assistant. I am enthusiastic at learning and eager to develop myself. I am detail oriented. I like playing with database and am interested in User Interface, Cloud Computing, and Neural Network Algorithms.</p>
+                <a href = "" class = "top-banner-btn">MORE</a>
+            </div>
+            <div class = "about-col">
+                <img src = "images/sunyoung.JPG">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class = "footer">
+        <h4>About the website</h4>
+        <p>This is Sunyoung Park's personal portfolio website</p>
+        <div class = "icons">
+            <i class="fa fa-github"></i>
+            <i class="fa fa-linkedin-square"></i>
+        </div>
+        <p>Made by Sunyoung Park/Scarlett Park</p>
+    </section>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+    </script>
+    <!-- <script>
+        window.onload = function () {
+          var span = document.createElement('span');
+        
+          span.className = 'fas';
+          span.style.display = 'none';
+          document.body.insertBefore(span, document.body.firstChild);
+          
+          alert(window.getComputedStyle(span, null).getPropertyValue('font-family'));
+            
+          document.body.removeChild(span);
+        };
+        </script> -->
+</body>
+</html>
