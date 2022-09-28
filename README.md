@@ -20,6 +20,11 @@
 I am currently working on errors in user list page.
 Error fix will be updated soon.
 
+<update>
+  Because of the error, for better understanding while practicing,
+  I am restarting the development.
+  HTML and CSS files are complete
+
 1)Sign up page
 - All fields are required, and generates corresponding error messages
 - Image extention type check
