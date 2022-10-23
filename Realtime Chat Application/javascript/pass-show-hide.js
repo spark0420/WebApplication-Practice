@@ -3,6 +3,7 @@
 const pswrdField = document.querySelector(".form input[type='password']"),
 toggleBtn = document.querySelector(".form .field i");
 
+// onclick function -> syntax: object.onclick = function(){myScript};
 toggleBtn.onclick = () =>{
     if(pswrdField.type == "password"){
         pswrdField.type = "text";
